@@ -17,7 +17,7 @@ export class FirebaseService {
     try {
       const app = initializeApp(environment.firebase);
       this.remoteConfig = getRemoteConfig(app);
-      this.remoteConfig.settings.minimumFetchIntervalMillis = 60000; // 1 minute for testing
+      this.remoteConfig.settings.minimumFetchIntervalMillis = 0; // Always fetch for testing
       
       // Set default values
       this.remoteConfig.defaultConfig = {

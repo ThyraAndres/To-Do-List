@@ -26,8 +26,8 @@ export class HomePage implements OnInit, OnDestroy {
     private toastController: ToastController
   ) {}
 
-  ngOnInit() {
-    this.loadFeatureFlags();
+  async ngOnInit() {
+    await this.loadFeatureFlags();
     this.loadData();
   }
 
@@ -36,8 +36,12 @@ export class HomePage implements OnInit, OnDestroy {
     this.destroy$.complete();
   }
 
-  private loadFeatureFlags() {
+  private async loadFeatureFlags() {
+    // Fetch latest config from Firebase
+    await this.firebaseService.fetchRemoteConfig();
+    
     this.showCategoriesFeature = this.firebaseService.getFeatureFlag('show_categories_feature');
+    console.log('Categories feature loaded:', this.showCategoriesFeature);
     
     // Dark theme feature flag
     const darkThemeEnabled = this.firebaseService.getFeatureFlag('enable_dark_theme');
