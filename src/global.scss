@@ -1,0 +1,75 @@
+@import "~@ionic/angular/css/core.css";
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+.task-completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.category-chip {
+  margin-right: 8px;
+}
+
+.fab-center {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+ion-item-option.small-delete-btn {
+  width: 50px !important;
+  min-width: 50px !important;
+  border-radius: 50% !important;
+  margin: 5px !important;
+}
+
+.small-delete-btn .button-native {
+  border-radius: 50% !important;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.small-delete-btn ion-icon {
+  font-size: 20px;
+}
+
+.small-delete-btn .button-inner {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+ion-item-sliding ion-item {
+  padding-left: 16px !important;
+}
+
+ion-item-sliding ion-label {
+  margin-left: 8px !important;
+}
+
+ion-title {
+  text-align: center !important;
+  max-width: 300px !important;
+  margin: 0 auto !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+/* Dark Theme */
+body.dark {
+  --ion-background-color: #121212;
+  --ion-text-color: #ffffff;
+  --ion-toolbar-background: #1f1f1f;
+  --ion-item-background: #1e1e1e;
+  --ion-card-background: #1e1e1e;
+}

@@ -1,0 +1,53 @@
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+*~
+*.sw[mnpcod]
+.tmp
+*.tmp
+*.tmp.*
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+UserInterfaceState.xcuserstate
+$RECYCLE.BIN/
+
+*.log
+log.txt
+npm-debug.log*
+
+/.nyc_output
+/coverage
+/dist
+/node_modules
+/platforms
+/plugins
+/www
+
+# IDE
+/.vscode
+/.idea
+
+# Capacitor
+/android
+/ios
+
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

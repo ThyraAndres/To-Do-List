@@ -1,0 +1,48 @@
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.task-completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.category-chip {
+  margin-right: 8px;
+  margin-bottom: 4px;
+}
+
+ion-segment {
+  margin-bottom: 16px;
+}
+
+ion-card {
+  margin-bottom: 16px;
+}
+
+ion-fab-button {
+  --box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.empty-state {
+  padding: 40px 20px;
+  text-align: center;
+  
+  ion-icon {
+    margin-bottom: 16px;
+  }
+  
+  h2 {
+    color: var(--ion-color-medium);
+    margin-bottom: 8px;
+  }
+  
+  p {
+    color: var(--ion-color-medium-shade);
+  }
+}
